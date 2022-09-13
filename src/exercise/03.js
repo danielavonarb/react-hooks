@@ -14,29 +14,15 @@ function Name({name, onNameChange}) {
 
 // 🐨 accept `animal` and `onAnimalChange` props to this component
 function FavoriteAnimal() {
-  // 💣 delete this, it's now managed by the App
-  const [animal, setAnimal] = React.useState('')
-  return (
-    <div>
-      <label htmlFor="animal">Favorite Animal: </label>
-      <input
-        id="animal"
-        value={animal}
-        onChange={event => setAnimal(event.target.value)}
-      />
-    </div>
-  )
+
+  
 }
 
-// 🐨 uncomment this
-// function Display({name, animal}) {
-//   return <div>{`Hey ${name}, your favorite animal is: ${animal}!`}</div>
-// }
-
-// 💣 remove this component in favor of the new one
-function Display({name}) {
-  return <div>{`Hey ${name}, you are great!`}</div>
+function Display({name, animal}) {
+  return <div>{`Hey ${name}, your favorite animal is: ${animal}!`}</div>
 }
+
+
 
 function App() {
   // 🐨 add a useState for the animal

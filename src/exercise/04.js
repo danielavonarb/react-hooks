@@ -13,11 +13,7 @@ function Board() {
   const nextValue = calculateNextValue(squares)
   const winner = calculateWinner(squares)
   const status = calculateStatus(winner, squares, nextValue)
-  // 💰 I've written the calculations for you! So you can use my utilities
-  // below to create these variables
 
-  // This is the function your square click handler will call. `square` should
-  // be an index. So if they click the center square, this will be `4`.
   function selectSquare(square) {
     if (winner || squares[square]) {
       return
